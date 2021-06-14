@@ -64,7 +64,7 @@ jobs:
         id: install_app
         uses: ServiceNow/sncicd-install-app@1.0.0
         with:
-          version: ${{ needs.build.outputs.publishversion }}
+          version: "1.0.0"
           # Only applicable if Application Customization is active. 
           # Version of the base application on which to apply the customizations
           baseAppVersion: '1.2.3'
@@ -72,6 +72,7 @@ jobs:
           # application is a higher version than the currently installed version
           # Default: false
           autoUpgradeBaseApp: true
+          
         env:
           snowUsername: "Pankaj"
           snowPassword: "12345"
