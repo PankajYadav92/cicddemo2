@@ -74,7 +74,7 @@ jobs:
         env:
           snowUsername: "Pankaj"
           snowPassword: "12345"
-          snowInstallInstance: "dev82957"
+          snowInstallInstance: "infosystechnologiesltdslsdemo13"
           appSysID: "b33bd7681bbc3010eff565f8bc4bcb32"
 
       - name: ServiceNow CI/CD Run ATF Test Suite
