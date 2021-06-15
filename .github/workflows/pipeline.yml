@@ -21,8 +21,8 @@ jobs:
       - name: ServiceNow CI/CD Apply Changes
         uses: ServiceNow/sncicd-apply-changes@1.0.0
         env:
-          snowUsername: "Pankaj"
-          snowPassword: "12345"
+          snowUsername: ${{ secrets.SN_USERNAME }}
+          snowPassword: ${{ secrets.SN_PASSWORD }}
           snowSourceInstance: "infosystechnologiesltdsvsdemo17"
           appSysID: "b33bd7681bbc3010eff565f8bc4bcb32"
 
@@ -35,8 +35,8 @@ jobs:
           # Optional, add +X to version number. Default: 1 
           # incrementBy: X
         env:
-          snowUsername: "Pankaj"
-          snowPassword: "12345"
+          snowUsername: ${{ secrets.SN_USERNAME }}
+          snowPassword: ${{ secrets.SN_PASSWORD }}
           snowSourceInstance: "infosystechnologiesltdsvsdemo17"
           appSysID: "b33bd7681bbc3010eff565f8bc4bcb32"
           
@@ -72,8 +72,8 @@ jobs:
           # Default: false
           
         env:
-          snowUsername: "Pankaj"
-          snowPassword: "12345"
+          snowUsername: ${{ secrets.SN_USERNAME }}
+          snowPassword: ${{ secrets.SN_PASSWORD }}
           snowInstallInstance: "infosystechnologiesltdslsdemo13"
           appSysID: "b33bd7681bbc3010eff565f8bc4bcb32"
 
@@ -82,8 +82,8 @@ jobs:
         with:
           testSuiteSysId: "43b02b601bfc3010eff565f8bc4bcb52"
         env:
-          snowUsername: "Pankaj"
-          snowPassword: "12345"
+          snowUsername: ${{ secrets.SN_USERNAME }}
+          snowPassword: ${{ secrets.SN_PASSWORD }}
           snowInstallInstance: "infosystechnologiesltdslsdemo13"
 
       - name: ServiceNow CI/CD Rollback App
@@ -92,8 +92,8 @@ jobs:
         with:
           version: ${{steps.install_app.outputs.rollbackVersion}}
         env:
-          snowUsername: "Pankaj"
-          snowPassword: "12345"
+          snowUsername: ${{ secrets.SN_USERNAME }}
+          snowPassword: ${{ secrets.SN_PASSWORD }}
           snowInstallInstance: "infosystechnologiesltdslsdemo13"
           appSysID: "b33bd7681bbc3010eff565f8bc4bcb32"
 
@@ -126,7 +126,7 @@ jobs:
           # application is a higher version than the currently installed version
           # Default: false
         env:
-          snowUsername: "Pankaj"
-          snowPassword: "12345"
+          snowUsername: ${{ secrets.SN_USERNAME }}
+          snowPassword: ${{ secrets.SN_PASSWORD }}
           snowInstallInstance: "infosysbpostdemo03"
           appSysID: "b33bd7681bbc3010eff565f8bc4bcb32"
