@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_infte_cicddemo.d123</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>d123</name>
+        <script><![CDATA[var d123 = Class.create();
+d123.prototype = {
+    initialize: function() {
+    },
+//code
+    type: 'd123'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Pankaj</sys_created_by>
+        <sys_created_on>2021-06-15 09:58:00</sys_created_on>
+        <sys_id>21be0c01dbf4b010ad36ccd8139619a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>d123</sys_name>
+        <sys_package display_value="cicddemo" source="x_infte_cicddemo">b33bd7681bbc3010eff565f8bc4bcb32</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="cicddemo">b33bd7681bbc3010eff565f8bc4bcb32</sys_scope>
+        <sys_update_name>sys_script_include_21be0c01dbf4b010ad36ccd8139619a6</sys_update_name>
+        <sys_updated_by>Pankaj</sys_updated_by>
+        <sys_updated_on>2021-06-15 09:58:00</sys_updated_on>
+    </sys_script_include>
+</record_update>
