@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_infte_cicddemo.test11</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>test11</name>
+        <script><![CDATA[var test11 = Class.create();
+test11.prototype = {
+    initialize: function() {
+    },
+//code
+    type: 'test11'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Pankaj</sys_created_by>
+        <sys_created_on>2021-06-15 03:20:55</sys_created_on>
+        <sys_id>8df3b27cdb787010ad36ccd8139619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test11</sys_name>
+        <sys_package display_value="cicddemo" source="x_infte_cicddemo">b33bd7681bbc3010eff565f8bc4bcb32</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="cicddemo">b33bd7681bbc3010eff565f8bc4bcb32</sys_scope>
+        <sys_update_name>sys_script_include_8df3b27cdb787010ad36ccd8139619b9</sys_update_name>
+        <sys_updated_by>Pankaj</sys_updated_by>
+        <sys_updated_on>2021-06-15 03:20:55</sys_updated_on>
+    </sys_script_include>
+</record_update>
