@@ -45,7 +45,7 @@ jobs:
     # run on different Linux instances, so without this Install App won't know
     # what to install.
     outputs:
-      publishversion: "1.1.2"
+      publishversion: "1.1.9"
 
   test:
     # Purpose of this job is to Install App from the app repo for the version 
@@ -64,7 +64,7 @@ jobs:
         id: install_app
         uses: ServiceNow/sncicd-install-app@1.0.0
         with:
-          version: "1.1.2"
+          version: ${{ needs.build.outputs.publishversion }}
           # Only applicable if Application Customization is active. 
           # Version of the base application on which to apply the customizations
           # Only applicable if Application Customization is active and the associated 
@@ -122,13 +122,11 @@ jobs:
           version: ${{ needs.test.outputs.publishversion }}
           # Only applicable if Application Customization is active. 
           # Version of the base application on which to apply the customizations
-          baseAppVersion: '1.2.3'
           # Only applicable if Application Customization is active and the associated 
           # application is a higher version than the currently installed version
           # Default: false
-          autoUpgradeBaseApp: true
         env:
           snowUsername: "Pankaj"
           snowPassword: "12345"
-          snowInstallInstance: "dev113795"
+          snowInstallInstance: "infosysbpostdemo03"
           appSysID: "b33bd7681bbc3010eff565f8bc4bcb32"
